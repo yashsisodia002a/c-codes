@@ -1,0 +1,28 @@
+//Using different methods to write programs to implement function overloading with default arguments for the following problems
+//To find the factorial of a number#include
+#include<iostream>
+using namespace std;
+
+    int fact(int n)
+   { 
+    int f= 1;
+    for(int i=1; i<=n; i++)
+    f*=i;
+
+    return f;
+   }
+    long fact(long n){
+    long f=1;
+      for(long i=1;i<=n; i++)
+    f*=i;
+    return f;
+    }
+    int main()
+    {
+    int a = 5;
+    long b = 7;
+    cout<<"Factorial of a = " <<fact(a);
+    cout<<"Factorial of b = " <<fact(b);
+
+    return 0;
+}
