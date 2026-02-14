@@ -1,0 +1,20 @@
+//Function Overloading + Default Argument
+//Default argument is used when value is not passed.
+#include <iostream>
+using namespace std;
+
+int fact(int n = 1)
+{
+    int f = 1;
+    for(int i = 1; i <= n; i++)
+        f *= i;
+    return f;
+}
+
+int main()
+{
+    cout << "Factorial of 5 = " << fact(5) << endl;
+    cout << "Factorial (default) = " << fact();
+
+    return 0;
+}‎
